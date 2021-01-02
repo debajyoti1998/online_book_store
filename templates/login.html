@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html style="background-image:url('/static/images/beauti.jpg')">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+
+<form method="POST" style="max-width:500px;margin:auto">
+  {% csrf_token %}
+  <h2 style="text-align: center;">login</h2>
+
+
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="username" name="username">
+  </div>
+  
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Password" name="password">
+  </div>
+
+  <button type="submit" class="btn"><b>login</b></button>
+  <a href="signup"><h3>NEW USER REGISTATION</h3></a>
+</form>
+
+</body>
+</html>

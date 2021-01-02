@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %} home
+{% endblock title %}
+{% block body %}
+  <div>
+    {% for product in products %}
+
+    <div class="product-box clearfix">
+      <img src="http://localhost:8000/media/{{product.image}}" height="150" width="200" alt="" class="pro-pic">
+      <h2>{{product.product_name}}</h2>
+      <h3>{{product.product_price}}</h3>
+      <p>{{product.tittle}}</p>
+      <button type="button" class="btn btn-primary"><b>view product</b></button>
+      <span class="fa fa-star five-star"></span>
+      <span class="fa fa-star five-star"></span>
+      <span class="fa fa-star five-star"></span>
+      <span class="fa fa-star five-star"></span>
+      <h5 class="review">review(24)</h5>
+
+    </div>
+  </div>
+  {% endfor %}
+  </div>
+{% endblock body %}

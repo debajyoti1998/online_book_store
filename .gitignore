@@ -1,0 +1,5 @@
+__pycache__/
+myenv/
+.vscode
+.DS_Store
+/ERP_project/myCustomeConfig.py
